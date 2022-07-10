@@ -1,0 +1,34 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #F8FAFC;
+}
+
+.container{
+    width: 36.5%;
+    margin: auto;
+}
+
+.btn{
+    margin-top: 65px;
+    border-color: transparent;
+    border-radius: 3px;
+    background-color: #ba5d2c
+}
+
+.btn:hover{
+    background-color: #86380E;
+}
+
+.text{
+    color: #FFFFFF;
+}
+
+.dad-joke{
+    margin-top: 25px;   
+}
