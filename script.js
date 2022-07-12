@@ -1,8 +1,11 @@
 const btn = document.querySelector('.btn')
+const text = document.querySelector('.dad-joke-text')
 
-btn.addEventListener('click', getJoke())
+btn.addEventListener("click", joke);
+    
 
-async function getJoke(){
+
+async function joke(){
     // Input headers using the API
     const response = await fetch('https://icanhazdadjoke.com',{
         headers: {
@@ -12,8 +15,9 @@ async function getJoke(){
     });
     // Turn response to json format
     const data = await response.json();
-    console.log(data['joke']);
+    let jokeText = data['joke']
+    console.log(jokeText)
+    text.innerHTML = jokeText;
 }
-
 
 
